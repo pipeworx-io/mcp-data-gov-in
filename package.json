@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-data-gov-in",
+  "version": "0.1.0",
+  "description": "India Open Government Data (OGD) Platform MCP — data.gov.in",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-gov-in"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-data-gov-in"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
