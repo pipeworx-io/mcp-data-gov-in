@@ -2,12 +2,14 @@
 
 India Open Government Data (OGD) Platform MCP — data.gov.in
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `resource_data` | Fetch records from any India Open Government Data (data.gov.in) resource by its resourceId. Supports pagination, per-field filtering, field projection, and sorting. The resourceId is the UUID shown on a dataset's page on data.gov.in (and in its API URL, e.g. api.data.gov.in/resource/<resourceId>). Example resourceId 9ef84268-d588-465a-a308-a864a43d0070 is "Current Daily Price of Various Commodities from Various Markets (Mandi)" with fields like state, district, market, commodity, variety, grade, arrival_date, min_price, max_price, modal_price. Use resource_meta first if you do not know a resource's field ids. |
+| `resource_meta` | Fetch the schema/metadata for a data.gov.in resource by resourceId: title, publishing org, sector, last-updated time, and the list of fields (each with name, id, type). Use this to discover the filterable/sortable field ids before calling resource_data. The resourceId is the UUID from the dataset's page on data.gov.in. |
 
 ## Quick Start
 
@@ -23,7 +25,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +49,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
