@@ -78,3 +78,13 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+```bash
+curl -X POST https://gateway.pipeworx.io/v1/tools/data_gov_in_resource_data \
+  -H 'Content-Type: application/json' \
+  -d '{"resourceId":"9ef84268-d588-465a-a308-a864a43d0070","limit":10,"offset":0}'
+```
+
+No account needed for the first calls. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/data_gov_in_resource_data`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
