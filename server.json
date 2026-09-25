@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/data-gov-in",
   "title": "Data Gov In",
   "description": "India Open Government Data (OGD) Platform MCP — data.gov.in",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/data-gov-in",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-data-gov-in",
