@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-gov-in",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "India Open Government Data (OGD) Platform MCP — data.gov.in",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-gov-in": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-gov-in"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-gov-in.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-gov-in",
   "pipeworx": {
-    "sourceHash": "v1-83fa4cb5b73ed4e15e99a3e7a5a41fb0a2ab8b5218819d07b51a746a0de9a995",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "mode": "gateway",
+    "slug": "data-gov-in",
+    "gatewaySlug": "data-gov-in",
+    "sourceHash": "v1-2ed3b013546fc4f1f4f91c546c864e11f6440e62c07580029071f492599b081f",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
