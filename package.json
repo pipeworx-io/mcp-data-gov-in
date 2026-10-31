@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-gov-in",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "India Open Government Data (OGD) Platform MCP — data.gov.in",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "data-gov-in",
     "gatewaySlug": "data-gov-in",
-    "sourceHash": "v1-2ed3b013546fc4f1f4f91c546c864e11f6440e62c07580029071f492599b081f",
-    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
+    "sourceHash": "v1-79a749f6f9989ba75cc215074c4736bceb85785865dbbe56ae5e8d052e08c0fb",
+    "sourceCommit": "5ce1a05186d46479e23865c66bdb8579d8de445e"
   }
 }
